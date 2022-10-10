@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" (click)="selectAppOpt('landing')"><i class="fas fa-terminal mx-2"></i>Beyond Code</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mx-5" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Academy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    User options
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#"><i class="fas fa-user-circle mx-2"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-comment-alt mx-2"></i> Notify</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mx-2"></i> Log out</a>
+                </div>
+            </li>
+        </ul>
+
+        <span class="navbar-text">
+            Your solution is good, "but it can be better"
+        </span>
+    </div>
+</nav>
