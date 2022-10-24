@@ -2,14 +2,14 @@
     <h1>{{titulo}}</h1>
 </div>
 
-<div *ngIf="titulo == ''">
-    <h1>define el titulo de el tema</h1>
+<div class="container form-group" *ngIf="titulo == ''">
+    <h1>Define el titulo de el tema</h1>
     <input id="title" type="text" [formControl] = "title">
-    <button (click) = "setTitle()">Agregar comentario</button>
+    <button class = "btn btn-primary" (click) = "setTitle()">Definir tema</button>
 </div>
 
-<div class = "container" *ngIf="titulo != ''">
+<div class = "container form-group" *ngIf="titulo != ''">
     <p *ngFor = "let comentario of comentarios">{{comentario}}</p>
     <input id="coment" type="text" [formControl] = "coment">
-    <button (click) = "setComment()">Agregar comentario</button>
+    <button class = "btn btn-primary" (click) = "setComment()">Agregar comentario</button>
 </div>
