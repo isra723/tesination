@@ -46,6 +46,8 @@ import { RecordComponent } from './components/SDLC/Maintenance/record/record.com
 import { SprintComponent } from './components/SDLC/Develop/sprint/sprint.component';
 import { BacklogComponent } from './components/SDLC/Develop/backlog/backlog.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 const customNotifierOptions: NotifierOptions = {
   position: {
 		horizontal: {
@@ -128,6 +130,8 @@ const customNotifierOptions: NotifierOptions = {
     BacklogComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES),
