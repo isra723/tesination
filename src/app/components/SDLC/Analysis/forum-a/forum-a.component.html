@@ -1,1 +1,15 @@
-<p>forum-a works!</p>
+<div class="container">
+    <h1>{{titulo}}</h1>
+</div>
+
+<div *ngIf="titulo == ''">
+    <h1>define el titulo de el tema</h1>
+    <input id="title" type="text" [formControl] = "title">
+    <button (click) = "setTitle()">Agregar comentario</button>
+</div>
+
+<div class = "container" *ngIf="titulo != ''">
+    <p *ngFor = "let comentario of comentarios">{{comentario}}</p>
+    <input id="coment" type="text" [formControl] = "coment">
+    <button (click) = "setComment()">Agregar comentario</button>
+</div>
