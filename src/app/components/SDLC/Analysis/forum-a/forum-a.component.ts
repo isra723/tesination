@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forum-a.component.scss']
 })
 export class ForumAComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
